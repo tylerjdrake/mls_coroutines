@@ -20,10 +20,12 @@ Copy the header file, `"mls_coroutines.hpp"`, into your project and start writin
 
 #define MLS_CO_END }}
 
-#define MLS_CO_YIELD(result)            \
-    mls_co_context = (__COUNTER__ / 2); \
-    return result;                      \
-    case (__COUNTER__ - 1) / 2:
+#define MLS_CO_YIELD(result)                \
+    do {                                    \
+        mls_co_context = (__COUNTER__ / 2); \
+        return result;                      \
+        case (__COUNTER__ - 1) / 2:;        \
+    } while (false)
 
 ```
 
