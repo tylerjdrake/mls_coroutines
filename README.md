@@ -8,6 +8,7 @@ Copy the header file, `"mls_coroutines.hpp"`, into your project and start writin
 
 ## mls_coroutines.hpp
 ```C++
+
 #pragma once
 
 #define MLS_CO_BEGIN(return_type, ...)                                \
@@ -23,10 +24,12 @@ Copy the header file, `"mls_coroutines.hpp"`, into your project and start writin
     mls_co_context = (__COUNTER__ / 2); \
     return result;                      \
     case (__COUNTER__ - 1) / 2:
+
 ```
 
 ## Sample Code
 ```C++
+
 #include <iostream>
 #include "mls_coroutines.hpp"
 
@@ -49,6 +52,7 @@ int main(int argc, char** argv)
     }
     return 0;
 }
+
 ```
 ## Sample Code Output
 ```
@@ -62,6 +66,7 @@ int main(int argc, char** argv)
 49
 50
 51
+
 ```
 
 # Inspiration

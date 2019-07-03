@@ -1,0 +1,30 @@
+# About
+
+Standard C++ looks like it is going to be getting coroutines eventually. But eventually is not **RIGHT NOW**.
+
+With enough preprocessor abuse: **M**acros, **L**ambdas, and **S**witch-statements can be used to get something that looks a bit like coroutines.
+
+Copy the header file, `"mls_coroutines.hpp"`, into your project and start writing coroutines!
+
+## mls_coroutines.hpp
+```C++
+@MLS_COROUTINES_HPP@
+```
+
+## Sample Code
+```C++
+@TEST_CPP@
+```
+## Sample Code Output
+```
+@TEST_OUTPUT@
+```
+
+# Inspiration
+
+Much of the macro machinery comes from here: [Simon Tatham's Coroutines in C](https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
+
+
+# Building This Repo
+
+    mkdir build && cd build && cmake .. -G "Visual Studio 16 2019" -A x64 && cmake --build .
