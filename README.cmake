@@ -9,9 +9,9 @@ endif()
 
 set(rel "${CMAKE_CURRENT_LIST_DIR}")
 
-file(READ "${rel}/src/mls_coroutines.hpp" MLS_COROUTINES_HPP)
+file(READ "${rel}/src/tdrake/mls_coroutines.hpp" MLS_COROUTINES_HPP)
 
-file(READ "${rel}/src/test.cpp" TEST_CPP)
+file(READ "${rel}/src/tdrake/test.cpp" TEST_CPP)
 
 execute_process(
     COMMAND "${TEST_EXECUTABLE}"

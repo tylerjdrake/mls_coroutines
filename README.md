@@ -33,7 +33,7 @@ Copy the header file, `"mls_coroutines.hpp"`, into your project and start writin
 ```C++
 
 #include <iostream>
-#include "mls_coroutines.hpp"
+#include "mls_coroutines.hpp" // "tdrake/mls_coroutines.hpp" if use CMake and add_subdirectory.
 
 auto count_up_from(int start)
 {

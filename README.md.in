@@ -6,6 +6,8 @@ With enough preprocessor abuse: **M**acros, **L**ambdas, and **S**witch-statemen
 
 Copy the header file, `"mls_coroutines.hpp"`, into your project and start writing coroutines!
 
+Or, if you use CMake, clone this repository as a git submodule and use `add_subdirectory`. The target's name is `tdrake::mls_coroutines`.
+
 ## mls_coroutines.hpp
 ```C++
 @MLS_COROUTINES_HPP@
